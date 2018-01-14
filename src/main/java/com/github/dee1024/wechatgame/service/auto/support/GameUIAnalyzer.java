@@ -1,7 +1,7 @@
-package com.github.coolcooldee.wechatgame.service.auto.support;
+package com.github.dee1024.wechatgame.service.auto.support;
 
-import com.github.coolcooldee.wechatgame.tools.ImageToolkit;
-import com.github.coolcooldee.wechatgame.tools.LogToolKit;
+import com.github.dee1024.wechatgame.tools.ImageToolkit;
+import com.github.dee1024.wechatgame.tools.LogToolKit;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

@@ -1,4 +1,4 @@
-package com.github.coolcooldee.wechatgame;
+package com.github.dee1024.wechatgame;
 
 /**
  * @Description
@@ -8,10 +8,10 @@ package com.github.coolcooldee.wechatgame;
  * @Date 2018/1/3
  */
 
-import com.github.coolcooldee.wechatgame.tools.LogToolKit;
-import com.github.coolcooldee.wechatgame.tools.SettingToolkit;
-import com.github.coolcooldee.wechatgame.ui.WechatGameUI;
-import com.github.coolcooldee.wechatgame.tools.AdbToolKit;
+import com.github.dee1024.wechatgame.tools.LogToolKit;
+import com.github.dee1024.wechatgame.tools.SettingToolkit;
+import com.github.dee1024.wechatgame.ui.WechatGameUI;
+import com.github.dee1024.wechatgame.tools.AdbToolKit;
 
 /**
  * 应用启动

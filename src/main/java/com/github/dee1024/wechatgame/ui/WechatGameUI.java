@@ -1,10 +1,10 @@
-package com.github.coolcooldee.wechatgame.ui;
+package com.github.dee1024.wechatgame.ui;
 
-import com.github.coolcooldee.wechatgame.service.auto.AutoJumpService;
-import com.github.coolcooldee.wechatgame.service.manual.JumpService;
-import com.github.coolcooldee.wechatgame.tools.AdbToolKit;
-import com.github.coolcooldee.wechatgame.tools.LogToolKit;
-import com.github.coolcooldee.wechatgame.tools.SettingToolkit;
+import com.github.dee1024.wechatgame.service.auto.AutoJumpService;
+import com.github.dee1024.wechatgame.service.manual.JumpService;
+import com.github.dee1024.wechatgame.tools.AdbToolKit;
+import com.github.dee1024.wechatgame.tools.LogToolKit;
+import com.github.dee1024.wechatgame.tools.SettingToolkit;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -163,11 +163,17 @@ public abstract class WechatGameUI {
 
     static class AutoJumpDubugButton extends JButton {
         public AutoJumpDubugButton() {
-            this.setText("自动跳跃调试");
+            this.setText("开启自动模式(开发版)");
             this.setVisible(true);
+            final JButton ebutton = this;
             this.addMouseListener(new MouseListener() {
                 public void mouseClicked(MouseEvent e) {
                     isAutoJumpStop = !isAutoJumpStop;
+                    if(isAutoJumpStop){
+                        ebutton.setText("开启自动模式(开发版)");
+                    }else{
+                        ebutton.setText("关闭自动模式(开发版)");
+                    }
                     new Thread(new Runnable() {
                         public void run() {
                             while(!isAutoJumpStop) {

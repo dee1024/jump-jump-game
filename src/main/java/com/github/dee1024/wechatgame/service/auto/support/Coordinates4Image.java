@@ -1,4 +1,4 @@
-package com.github.coolcooldee.wechatgame.service.auto.support;
+package com.github.dee1024.wechatgame.service.auto.support;
 
 /**
  * @author Dee1024 <coolcooldee@gmail.com>

@@ -1,4 +1,4 @@
-package com.github.coolcooldee.wechatgame.tools;
+package com.github.dee1024.wechatgame.tools;
 
 
 

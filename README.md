@@ -60,7 +60,7 @@
 
 - __步骤四：下载本应用并执行__
 
-    点击[这里](https://github.com/coolcooldee/wechat-jump-game/archive/master.zip)下载本应用的 Zip 包并解压，进入目录执行命令
+    点击[这里](https://github.com/dee1024/wechat-jump-game/archive/master.zip)下载本应用的 Zip 包并解压，进入目录执行命令
     ```bash
     java -jar wechat-jump-game-1.0.jar
     ```
@@ -83,8 +83,8 @@
 
 其他说明
 ====
-- __如果出现跳跃距离过小或者偏大的情况，可以通过设置 jump_rate 跳跃系数来校正跳跃距离，改配置项在您运行的 jar 文件同目录的一个setting.properties 文件中，该值的设置值可以参考[这里](https://github.com/coolcooldee/wechat-jump-jump-game/blob/master/doc/readme.txt)__
-- __如果电脑端显示的屏幕过小或者偏大，可以通过设置 ui_rate 显示缩放比例来适配，配置方式参考同上,参考[这里](https://github.com/coolcooldee/wechat-jump-jump-game/blob/master/doc/readme.txt)__
+- __如果出现跳跃距离过小或者偏大的情况，可以通过设置 jump_rate 跳跃系数来校正跳跃距离，改配置项在您运行的 jar 文件同目录的一个setting.properties 文件中，该值的设置值可以参考[这里](https://github.com/dee1024/wechat-jump-jump-game/blob/master/doc/readme.txt)__
+- __如果电脑端显示的屏幕过小或者偏大，可以通过设置 ui_rate 显示缩放比例来适配，配置方式参考同上,参考[这里](https://github.com/dee1024/wechat-jump-jump-game/blob/master/doc/readme.txt)__
 
 刷分效果
 ====
@@ -109,7 +109,7 @@
 
 作者
 ===
-* __Dee Qiu__ <coolcooldee@gmail.com>
+* __Dee Qiu__ <dee1024@gmail.com>
 
 其它
 ===

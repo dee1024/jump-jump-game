@@ -1,11 +1,9 @@
-package com.github.coolcooldee.wechatgame.service.manual;
-import com.github.coolcooldee.wechatgame.tools.AdbToolKit;
-import com.github.coolcooldee.wechatgame.tools.LogToolKit;
-import com.github.coolcooldee.wechatgame.tools.SettingToolkit;
+package com.github.dee1024.wechatgame.service.manual;
+import com.github.dee1024.wechatgame.tools.AdbToolKit;
+import com.github.dee1024.wechatgame.tools.LogToolKit;
+import com.github.dee1024.wechatgame.tools.SettingToolkit;
 
 import java.awt.*;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 跳跃的核心逻辑

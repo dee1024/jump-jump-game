@@ -1,11 +1,11 @@
-package com.github.coolcooldee.wechatgame.service.auto;
+package com.github.dee1024.wechatgame.service.auto;
 
-import com.github.coolcooldee.wechatgame.service.auto.support.Coordinates4Image;
-import com.github.coolcooldee.wechatgame.service.auto.support.GameUIAnalyzer;
-import com.github.coolcooldee.wechatgame.tools.AdbToolKit;
-import com.github.coolcooldee.wechatgame.tools.ImageToolkit;
-import com.github.coolcooldee.wechatgame.tools.LogToolKit;
-import com.github.coolcooldee.wechatgame.tools.SettingToolkit;
+import com.github.dee1024.wechatgame.service.auto.support.Coordinates4Image;
+import com.github.dee1024.wechatgame.service.auto.support.GameUIAnalyzer;
+import com.github.dee1024.wechatgame.tools.AdbToolKit;
+import com.github.dee1024.wechatgame.tools.ImageToolkit;
+import com.github.dee1024.wechatgame.tools.LogToolKit;
+import com.github.dee1024.wechatgame.tools.SettingToolkit;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
