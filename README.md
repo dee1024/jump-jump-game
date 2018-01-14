@@ -53,7 +53,8 @@
 
     Android 手机开启 USB 调试模式，具体可参考[这里](https://jingyan.baidu.com/article/0eb457e50b99d003f0a9055f.html)
 
-    ![](https://github.com/coolcooldee/wechat-jump-game/blob/master/doc/androiddebug.png)
+    ![](https://raw.githubusercontent.com/dee1024/jump-jump-game/master/doc/androiddebug.png)
+
 
     Android 手机连接电脑并且开启小游戏，处于可操作界面
 
@@ -66,7 +67,7 @@
 
 - __步骤五：按照引导配置ADB地址__
 
-    ![](https://github.com/coolcooldee/wechat-jump-game/blob/master/doc/adb-setting.png)
+    ![](https://raw.githubusercontent.com/dee1024/jump-jump-game/master/doc/adb-setting.png)
 
 - __步骤六：点击鼠标开始游戏__
 
@@ -89,7 +90,7 @@
 ====
 - __效果图__
 
-    ![image](https://github.com/coolcooldee/wechat-jump-game/blob/master/doc/demo.gif)
+    ![image](https://raw.githubusercontent.com/dee1024/jump-jump-game/master/doc/demo.gif)
 
 
 防封杀操作注意项
