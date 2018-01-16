@@ -78,7 +78,7 @@ public abstract class AutoJumpService {
 //        File file = new File("/Users/dee/Documents/dev/github/wechat-jump-game/target/resolution/1440*2560.png");
 //        File file = new File("/Users/dee/Documents/dev/github/wechat-jump-game/target/resolution/1440*2960.png");
 //        File file = new File("jumpgame.png");
-        File file = new File("resolution/no/fixb.png");
+        File file = new File("resolution/no/fixe.png");
 
         BufferedImage bi = null;
         try {
@@ -88,12 +88,12 @@ public abstract class AutoJumpService {
         }
 
         BufferedImage zBi = ImageToolkit.cleanImage(bi);
-        ImageIO.write(zBi, "PNG", new File("z_clean.png"));
+        ImageIO.write(zBi, "PNG", new File("/Users/dee/Documents/dev/github/jump-jump-game/resolution/no/z_clean.png"));
 
         Coordinates4Image chessBottomCenterPoint = GameUIAnalyzer.searchChessBottomCenterPoint(bi);
         if(chessBottomCenterPoint!=null){
             BufferedImage nBi =  GameUIAnalyzer.markeRedCircle(bi,chessBottomCenterPoint.getX(), chessBottomCenterPoint.getY());
-            ImageIO.write(nBi, "PNG", new File("z_origin.png"));
+            ImageIO.write(nBi, "PNG", new File("/Users/dee/Documents/dev/github/jump-jump-game/resolution/no/z_origin.png"));
         }else{
             LogToolKit.println("未找到棋子底部中心点");
         }
@@ -114,7 +114,7 @@ public abstract class AutoJumpService {
 
 
 
-        File rfile = new File("z_target.png");
+        File rfile = new File("/Users/dee/Documents/dev/github/jump-jump-game/resolution/no/z_target.png");
         ImageIO.write(resultBi, "PNG", rfile);
 
 

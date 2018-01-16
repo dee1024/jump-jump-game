@@ -140,7 +140,7 @@ public abstract class GameUIAnalyzer {
     }
 
     public static Coordinates4Image searchTargetCenterCoordinate2(BufferedImage bi, Coordinates4Image targetAreaTopCoordinate) {
-        return new Coordinates4Image(targetAreaTopCoordinate.getX(), targetAreaTopCoordinate.getY()+ new Random().nextInt(10)+30);
+        return new Coordinates4Image(targetAreaTopCoordinate.getX(), targetAreaTopCoordinate.getY()+ new Random().nextInt(10)+20);
     }
 
 
@@ -199,7 +199,18 @@ public abstract class GameUIAnalyzer {
 
         //识别为纯白色物体
         if(isSureHoldWhiteCircularBoxColor(getRGB(bi,targetAreaTopCoordinate))){
-
+            for (int j = targetAreaTopCoordinate.getY(); j < bi.getHeight(); j++) {
+                if(calculateColorSimilarValue(getRGB(bi,targetAreaTopCoordinate.getX(),j), getRGB(bi,targetAreaTopCoordinate.getX(),j+1))!=1){
+                    int[] t1 = {190,190,190};
+                    int[] t2 = {227,227,227};
+                    if(calculateColorSimilarValue(t1,getRGB(bi,targetAreaTopCoordinate.getX(),j+1))==1 || calculateColorSimilarValue(t2,getRGB(bi,targetAreaTopCoordinate.getX(),j+1))==1){
+                        //识别为全白色小方块
+                        Coordinates4Image temp = new Coordinates4Image(targetAreaTopCoordinate.getX(), targetAreaTopCoordinate.getY()+new Random().nextInt(10)+20);
+                        LogToolKit.println("模糊模式，识别纯白色小方块中点是："+temp.toString());
+                        return temp;
+                    }
+                }
+            }
         }
 
         BufferedImage cleanBi = ImageToolkit.cleanImage(bi); //剩下黑白色
@@ -495,7 +506,7 @@ public abstract class GameUIAnalyzer {
         return false;
     }
 
-    //识别为整体纯白、纯绿、纯黄带中心点的方形盒子
+    //识别为整体纯白、纯绿、纯黄、纯橙带中心点的方形盒子
     private static boolean isSureHoldWhiteSquareBoxColor(int[] rgb){
         if((rgb[0]==250)&&(rgb[1]==250)&&(rgb[2]==250)){
             return true;
@@ -506,6 +517,10 @@ public abstract class GameUIAnalyzer {
         }
         int[] orgb2 = {255,238,97};
         if(calculateColorSimilarValue(rgb, orgb2)>0.98){
+            return true;
+        }
+        int[] orgb3 = {245,128,58};
+        if(calculateColorSimilarValue(rgb, orgb3)>0.98){
             return true;
         }
         return false;
