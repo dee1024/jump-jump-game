@@ -197,7 +197,7 @@ public abstract class GameUIAnalyzer {
             return temp;
         }
 
-        //
+        //识别为纯白色物体
         if(isSureHoldWhiteCircularBoxColor(getRGB(bi,targetAreaTopCoordinate))){
 
         }
